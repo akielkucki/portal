@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Checkout Page</title>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.checkout-form {
+  width: 80%;
+  padding: 20px;
+  background-color: black;
+  border: 4px solid #FFA500;
+  border-radius: 20px;
+  color: white;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #FFA500;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+.subscribe-button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  background-color: #FFA500;
+  color: navy;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 900;
+  font-size: 14px;
+  width: 200px;
+  transition: width 1s ease;
+}
+
+.subscribe-button:hover {
+  background-color: rgb(43, 42, 126);
+  width: 100%;
+  color: #FFA500;
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="checkout-container">
+        <img src="https://www.therealworldportal.com/wp-content/uploads/trw-logo-main.webp" alt="">
+        <h1>Escape the fish tank you once thought was true reality</h1>
+
+      <form class="checkout-form">
+        <div class="form-section">
+          <h2>Credit Card Information</h2>
+          <input type="text" placeholder="0000 0000 0000 0000">
+          <input type="text" placeholder="MM / YY">
+          <input type="text" placeholder="CVC">
+        </div>
+        <div class="form-section">
+          <h2>Address</h2>
+          <input type="text" placeholder="Full Name">
+          <input type="text" placeholder="Address">
+          <input type="text" placeholder="City">
+          <input type="text" placeholder="Zip Code">
+          <input type="text" placeholder="Country">
+        </div>
+        <button class="subscribe-button">SUBSCRIBE</button>
+      </form>
+    </div>
+  </body>
+</html>
+
